@@ -1,0 +1,256 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h2>SA</h2>
+        <nav>
+            <a href="https://github.com/sid-codes-7" target="_blank">Github</a>
+            <a href="https://discord.com/channels/1395893924308062300/1395893924744138763" target="_blank">Discord</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+            <div class="nameContainer">
+                <h1>Sid Aher</h1>
+                <p class="darkerText">I make projects on Github and Roblox Studio.</p>
+            </div>
+            <div class="statsContainer">
+                <div class="imgContainer">
+                    <img src="https://cdn.discordapp.com/avatars/764878996478885928/archived/1395796333058588672/5f81bd5bead53327d4668536f9520e3d.webp?size=300" alt="profile-img"/>
+                </div>
+                <div class="stats darkerText">
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="">13 GitHub Repositories.</p>
+                    </div> 
+                    <div>
+                        <div>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <p class="">40 Contributions in the last year.</p>
+                    </div> 
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <p class="">92 Commitments in total.</p>
+                    </div> 
+                </div>
+            </div>
+            <p class="aboutMe">
+                Hi, i'm Sid and I love to code in LUA, Python, and sometimes C++, love to play basketball, and love to play games a lot. I have a discord page where I teach others on how to code. Enjoying F1 is amazingly fun, I am really huge fan of F1 racing, Redbull is my favorite team and I love cooking too. This is a website for my Portfolio.
+            </p>
+            </section>
+            <section class="projectContainer">
+                <p class="darkerText headerText">Latest Projects</p>
+                <div class="projectItem">
+                    <div>
+                        <p class="darkerText">Jan 8, 2025</p>
+                        <p>TicTacToe is a app made in XCode using Swift which is inspired from the game, TicTacToe. It is on my Github page.</p>
+
+                        <p class="darkerText">Jan 16, 2025</p>
+                        <p>Are Pets Cool? is a app where uses get to decide whether pets are cool and which ones. It is on my Github page.</p>
+
+                        <p class="darkerText">Feb 27, 2025</p>
+                        <p>Grow a Tree Game is a game where users grow a tree. It is on my Github page.</p>
+                    </div>
+                    
+                    
+                </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
+
+
+
+CSS:
+
+:root {
+    --primary-color: #adf0d4;
+    --secondary-color: #1fd8a4;
+    --bg-color: #0d1512;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Inter', sans-serif;
+    transition-duration: 900ms;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 14px;
+}
+
+.darkerText {
+    color: var(--secondary-color)
+}
+
+header,
+main,
+footer {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+p {
+    font-size: 1.05em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+nav {
+    color:  var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav a {
+    cursor: pointer;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+main, section, .nameContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main {
+    gap: 64px;
+}
+
+section {
+    gap: 48px;
+}
+
+.nameContainer {
+
+    gap: 8px;
+}
+
+.statsContainer {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    flex-direction: column;
+    
+}
+
+.imgContainer {
+    border-radius: 100%;
+    max-width: 114px;
+    overflow: hidden;
+}
+
+.imgContainer img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.stats>div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stats div i {
+    font-size: 1.4em;
+}
+
+.stats div div {
+    display: grid;
+    place-items: center;
+    min-width: 40px;
+}
+
+.aboutMe {
+    line-height: 1.5em;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.headerText {
+    margin-bottom: 24px;
+}
+
+.projectItem {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.projectItem div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.projectItem div:last-child {
+    aspect-ratio: 16/9;
+}
+
+@media (min-width: 640px) {
+
+    .statsContainer {
+        flex-direction: row;
+    }
+
+    .stats {
+        gap: 0px;
+    }
+
+    .aboutMe {
+        width: 80%;
+        margin-right: auto;
+    }
+}
